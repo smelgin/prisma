@@ -1,0 +1,8 @@
+baseURL = "https://www.prisma-data.site"
+languageCode = "en-us"
+title = "Prisma Data Services | Expert Data Migration"
+theme = "" # We are building a custom layout right in the layouts folder
+
+[params]
+  description = "New Mexico's premier database migration experts. Specializing in Microsoft SQL Server to AWS Aurora PostgreSQL migrations."
+  author = "Prisma Data Services"

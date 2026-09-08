@@ -1,0 +1,153 @@
+:root {
+    --bg-dark: #05071a; /* Matches your logo background */
+    --accent-purple: #9b51e0;
+    --accent-blue: #2d9cdb;
+    --accent-cyan: #00FFC6;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(5, 7, 26, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 8px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--accent-purple), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-cyan);
+}
+
+/* Hero Section & Parallax */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* You can add a subtle background pattern or image here */
+    background: radial-gradient(circle at center, #1a1a3a 0%, var(--bg-dark) 100%);
+}
+
+.hero-content {
+    z-index: 10;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #a0aabf;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-cyan));
+    color: var(--bg-dark);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 255, 198, 0.3);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 100px 5%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border-top: 3px solid var(--accent-purple);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+blockquote {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(45, 156, 219, 0.1);
+    border-left: 4px solid var(--accent-blue);
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020312;
+    color: #666;
+}
